@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
 header{
     height: 60px;
     background-color: blueviolet;
@@ -12,6 +17,12 @@ header{
 .header-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+header .website-title img{
+    margin-left: 10px;
+    max-height: 50px;
 }
 
 header nav ul{
@@ -20,14 +31,16 @@ header nav ul{
 
 header nav ul li{
     display: inline-block;
+    position: relative;
 }
 
 header nav ul li a{
+    display: block;
     padding: 0 30px;
     color: white;
     text-decoration: none;
-    display: block;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 1em;
 }
 
 header nav  ul li a:hover{
@@ -35,6 +48,27 @@ header nav  ul li a:hover{
     color: rgb(244, 248, 18);
 }
 
+header nav ul li .drop-down{
+    width: 100%;
+    background-color: #b1bbc5;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+header nav ul li .drop-down li{
+    display: block;
+}
+
+header nav ul li .drop-down a:hover{
+    border-left: 4px solid #282e34;
+}
+
+header nav ul li:hover ul.drop-down{
+    display: block;
+}
+
+/*MAIN*/
 .flex-container{
     display: grid;
     /*--n: 4;
