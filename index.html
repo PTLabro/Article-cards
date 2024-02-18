@@ -3,17 +3,17 @@
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
     </head>
     <body>
         <header>
             <div class="header-container">
-                <div class="website-title">
-                    <img src="images/logo.png"/>
-                </div>
-                <div class="openMenu"><i class="fa fa-bars"></i></div>
-                <nav class="mainMenu">
-                    <ul>
+                <nav class="mainMenu green">
+                    <img src="images/logo.png" class="left">
+                    <a href="#" class="left sidenav-trigger" data-target="mobile-links">
+                        <i class="material-icons left">menu</i>
+                    </a>
+                    <ul class="left hide-on-med-and-down">
                         <li>
                             <a href="#">Our Probinsyudad ▼</a>
                             <ul class="drop-down">
@@ -32,10 +32,17 @@
                         </li>
                         <li><a href="#">Full Disclosure</a></li>
                         <li><a href="#">News & Articles</a></li>
-                        <div class="closeMenu"><i class="fa fa-times"></i></div>
                     </ul>
                 </nav>
             </div>
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#">Our Probinsyudad ▼</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Tourism</a></li>
+                <li><a href="#">Programs & Services ▼</a></li>
+                <li><a href="#">Full Disclosure</a></li>
+                <li><a href="#">News & Articles</a></li>
+            </ul>
         </header>
         <main>
           <div class = "flex-container">
@@ -88,5 +95,12 @@
                 </div>
             </div>
         </main>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            })
+        </script>
     </body>
 </html>

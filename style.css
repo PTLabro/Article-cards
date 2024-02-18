@@ -20,14 +20,9 @@ header{
     align-items: center;
 }
 
-header .website-title img{
+header nav img{
     margin-left: 10px;
     max-height: 50px;
-}
-
-header .header-container .openMenu, .closeMenu{
-    display: none;
-    cursor: pointer;
 }
 
 header nav ul{
@@ -81,7 +76,6 @@ header nav ul li:hover ul.drop-down{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     justify-items: center;
-    border: 1px solid red;
 }
 
 .box{
@@ -103,38 +97,3 @@ header nav ul li:hover ul.drop-down{
       margin: 60px;
     }
   }
-@media screen and (max-width: 768px) {
-    nav.mainMenu{
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: orange;
-        transition: top 1s ease;
-        display: none;
-    }
-    nav .mainMenu, .closeMenu{
-        display: block;
-        position: absolute;
-    }
-    nav .openMenu{
-        display: block;
-    }
-
-    nav .header-container{
-        display: flex;
-        justify-content: center;
-    }
-    nav .header-container img{
-        margin-top: 5px;
-    }
-    nav .mainMenu li a:hover{
-        background: none;
-        color: pink;
-    }
-}
