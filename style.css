@@ -5,15 +5,13 @@
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
+    height: 60px;
     background-color: blueviolet;
 }
 
 .header-container{
     display: flex;
-    height: 20px;
-    border: 1px solid red;
+    justify-content: space-between;
 }
 
 .flex-container{
@@ -22,6 +20,7 @@ header{
     grid-template-columns: repeat(auto-fit, minmax(max(200px,(100% - (var(--n) - 1)*10px)/var(--n)), 1fr));*/
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
+    justify-items: center;
     border: 1px solid red;
 }
 
@@ -31,6 +30,7 @@ header{
     margin: 10px;
     padding: 10px;
     height: 400px;
+    width: clamp(35ch, 50%, 60ch);
     text-align: center;
 }
 .box:hover{
