@@ -14,6 +14,27 @@ header{
     justify-content: space-between;
 }
 
+header nav ul{
+    line-height: 60px;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+
+header nav  ul li a:hover{
+    background-color: aqua;
+    color: rgb(244, 248, 18);
+}
+
 .flex-container{
     display: grid;
     /*--n: 4;
