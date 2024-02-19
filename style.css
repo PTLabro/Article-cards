@@ -25,6 +25,7 @@ header nav img{
     max-height: 50px;
 }
 
+<<<<<<< HEAD
 header nav ul{
     line-height: 60px;
 }
@@ -69,6 +70,8 @@ header nav ul li:hover ul.drop-down{
 }
 
 /*MAIN*/
+=======
+>>>>>>> parent of 0307932 (Header content added)
 .flex-container{
     display: grid;
     /*--n: 4;
