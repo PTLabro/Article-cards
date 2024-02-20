@@ -34,17 +34,6 @@ header nav{
     justify-content: space-between;
 }
 
-header .burger-menu{
-    display: none;
-    max-height: 50px;
-    margin: 0px 15px;
-}
-
-header .burger-menu i{
-    color: white;
-    font-size: 2em;
-}
-
 header nav ul{
     line-height: 60px;
 }
@@ -79,6 +68,17 @@ header nav ul li .drop-down{
 
 header nav ul li .drop-down li{
     display: block;
+}
+
+header .burger-menu{
+    display: none;
+    max-height: 50px;
+    margin: 0px 15px;
+}
+
+header .burger-menu i{
+    color: white;
+    font-size: 2em;
 }
 
 header nav ul li .drop-down a:hover{
@@ -120,10 +120,27 @@ header nav ul li:hover ul.drop-down{
   }
 
   @media screen and (max-width: 64em) {
-    header nav ul li a{
+    header nav{
+        height: 90vh;
+        max-height: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: gray;
         display: none;
     }
+    header nav ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     header .burger-menu{
+        margin-bottom: 5px;
         display: block;
     }
   }
