@@ -12,6 +12,7 @@ body{
 header{
     height: 60px;
     background-color: blueviolet;
+    border: 1px solid red;
 }
 
 .header-container{
@@ -25,10 +26,14 @@ header nav img{
     max-height: 50px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 27fecd9 (Media query (Unfinished))
+header nav{
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 header nav ul{
     line-height: 60px;
 }
@@ -73,8 +78,6 @@ header nav ul li:hover ul.drop-down{
 }
 
 /*MAIN*/
-=======
->>>>>>> parent of 0307932 (Header content added)
 .flex-container{
     display: grid;
     /*--n: 4;
