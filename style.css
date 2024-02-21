@@ -31,11 +31,12 @@ header nav{
 }
 
 header nav ul{
+    display: flex;
+    list-style: none;
     line-height: 60px;
 }
 
 header nav ul li{
-    display: inline-block;
     position: relative;
 }
 
