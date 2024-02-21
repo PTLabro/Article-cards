@@ -15,7 +15,7 @@ header{
     display: flex;
     align-items: center;
 }
-header span img{
+header .brand img{
     margin-left: 10px;
     max-height: 50px;
 }
@@ -49,6 +49,7 @@ header nav ul li a{
     transition: all 0.5s;
 }
 
+
 header nav  ul li a:hover{
     background-color: aqua;
     color: rgb(244, 248, 18);
@@ -66,15 +67,19 @@ header nav ul li .drop-down li{
     display: block;
 }
 
-header .burger-menu{
+header nav .burger-menu{
     display: none;
     max-height: 50px;
     margin: 0px 15px;
 }
 
-header .burger-menu i{
+header nav .burger-menu i{
     color: white;
     font-size: 2em;
+}
+
+#checkbox{
+    display: none;
 }
 
 header nav ul li .drop-down a:hover{
@@ -117,26 +122,38 @@ header nav ul li:hover ul.drop-down{
 
   @media screen and (max-width: 64em) {
     header nav{
-        height: 50vh;
+        align-items: center;
+    }
+
+    header nav ul{
+        height: 0;
         max-height: none;
         position: fixed;
-        top: 0;
+        top: 60px;
         right: 0;
         left: 0;
         z-index: 10;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        background-color: gray;
-
-    }
-    header nav ul{
         width: 100%;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
+        background-color: gray;
+        transition: height 1s ease-in-out;
     }
-    header .burger-menu{
-        margin-bottom: 5px;
+    header nav .burger-menu{
         display: block;
+        z-index: 999;
+        max-height: 50px;
+        margin: 0px 15px;
+    }
+
+    header nav .burger-menu i:hover{
+        color: pink;
+    }
+
+    #checkbox:checked ~ ul{
+        height: 60vh;
+        transition: height 1s;
     }
   }
