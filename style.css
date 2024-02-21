@@ -12,26 +12,22 @@ body{
 header{
     height: 60px;
     background-color: blueviolet;
-}
-
-.header-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-
-header nav img{
+header span img{
     margin-left: 10px;
     max-height: 50px;
 }
 
 header nav{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-height: 60px;
     max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 header nav ul{
@@ -121,7 +117,7 @@ header nav ul li:hover ul.drop-down{
 
   @media screen and (max-width: 64em) {
     header nav{
-        height: 90vh;
+        height: 50vh;
         max-height: none;
         position: fixed;
         top: 0;
@@ -132,7 +128,7 @@ header nav ul li:hover ul.drop-down{
         justify-content: space-around;
         align-items: center;
         background-color: gray;
-        display: none;
+
     }
     header nav ul{
         width: 100%;
